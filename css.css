@@ -1,0 +1,66 @@
+.c-cuadrado {
+  width: 200px;
+  height: 200px;
+  border: solid;
+}
+
+.g--bg-color-red {
+  background-color: red;
+}
+
+.g--bg-color-green {
+  background-color: green;
+}
+
+.g--bg-color-blue {
+  background-color: blue;
+}
+
+.g--bg-color-orange {
+  background-color: orange;
+}
+
+@media (min-width: 500px) {
+  .g--bg-red\@movil {
+    background-color: red;
+  }
+  .g--bg-green\@movil {
+    background-color: green;
+  }
+  .g--bg-blue\@movil {
+    background-color: blue;
+  }
+  .g--bg-orange\@movil {
+    background-color: orange;
+  }
+}
+@media (min-width: 750px) {
+  .g--bg-red\@tablet {
+    background-color: red;
+  }
+  .g--bg-green\@tablet {
+    background-color: green;
+  }
+  .g--bg-blue\@tablet {
+    background-color: blue;
+  }
+  .g--bg-orange\@tablet {
+    background-color: orange;
+  }
+}
+@media (min-width: 1000px) {
+  .g--bg-red\@desktop {
+    background-color: red;
+  }
+  .g--bg-green\@desktop {
+    background-color: green;
+  }
+  .g--bg-blue\@desktop {
+    background-color: blue;
+  }
+  .g--bg-orange\@desktop {
+    background-color: orange;
+  }
+}
+
+/*# sourceMappingURL=css.css.map */

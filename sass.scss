@@ -1,0 +1,34 @@
+.c-cuadrado{
+    width: 200px;
+    height: 200px;
+    border: solid;
+}
+$breakPoints:(
+    "500px":"movil",
+    "750px":"tablet",
+    "1000px":"desktop"
+);
+
+$colors:(
+    "red": red,
+    "green": green,
+    "blue": blue,
+    "orange": orange
+);
+
+@each $name, $color in $colors{
+    .g--bg-color-#{$name}{
+        background-color: $color;
+    }
+};
+
+@each $number,$dispositivo, $breakPoint in $breakPoints{
+    @media (min-width: $number){
+        @each $vuelta, $color in $colors{
+            .g--bg-#{$color}\@#{$dispositivo}{
+                background-color: $color;
+            }
+        };  
+    }
+};
+
